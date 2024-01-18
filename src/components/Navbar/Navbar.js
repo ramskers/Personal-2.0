@@ -87,40 +87,54 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
-                About
+              <Link
+                to="/contact"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Contact
               </Link>
             </li>
           </ul>
           <div className="social">
-            <InstagramIcon
+            <a
               className="social-icons"
-              style={{ width: "26px", height: "26px" }}
+              href="https://www.instagram.com/ramskers/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <InstagramIcon
+                style={{ width: "26px", height: "26px" }}
+              ></InstagramIcon>
+            </a>
+            <a
+              className="social-icons"
+              href="https://github.com/ramskers"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GitHubIcon
+                style={{ width: "26px", height: "26px" }}
+              ></GitHubIcon>
+            </a>
+            <a
+              className="social-icons"
               href="https://www.linkedin.com/in/ramtinnorozzy/"
               target="_blank"
               rel="noopener noreferrer"
-            ></InstagramIcon>
-            <GitHubIcon
+            >
+              <LinkedInIcon
+                style={{ width: "26px", height: "26px" }}
+              ></LinkedInIcon>
+            </a>
+            <a
               className="social-icons"
-              style={{ width: "26px", height: "26px" }}
-              href="https://www.linkedin.com/in/ramtinnorozzy/"
+              href="mailto:ramtinnorozzy@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-            ></GitHubIcon>
-            <LinkedInIcon
-              className="social-icons"
-              style={{ width: "26px", height: "26px" }}
-              href="https://www.linkedin.com/in/ramtinnorozzy/"
-              target="_blank"
-              rel="noopener noreferrer"
-            ></LinkedInIcon>
-            <EmailIcon
-              className="social-icons"
-              style={{ width: "26px", height: "26px" }}
-              href="https://www.linkedin.com/in/ramtinnorozzy/"
-              target="_blank"
-              rel="noopener noreferrer"
-            ></EmailIcon>
+            >
+              <EmailIcon style={{ width: "26px", height: "26px" }}></EmailIcon>
+            </a>
           </div>
         </div>
       </nav>

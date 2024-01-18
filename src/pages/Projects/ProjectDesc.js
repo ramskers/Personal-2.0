@@ -39,8 +39,8 @@ function ProjectDesc() {
   if (!postData) return <div>Loading...</div>;
 
   return (
-    <div className="bg-gray-200 min-h-screen p-12">
-      <div className="container shadow-lg mx-auto bg-green-100 rounded-lg mt-12">
+    <div className=" min-h-screen p-12">
+      <div className="container shadow-lg mx-auto bg-green-50 rounded-lg mt-12">
         <div className="relative">
           <div className="absolute h-full w-full flex items-center justify-center p-8">
             <div className="bg-white bg-opacity-75 rounded p-12">

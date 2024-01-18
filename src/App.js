@@ -7,6 +7,7 @@ import Blog from "./pages/Blog/Blog";
 import BlogDesc from "./pages/Blog/BlogDesc";
 import Project from "./pages/Projects/Project";
 import ProjectDesc from "./pages/Projects/ProjectDesc";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/:slug" element={<ProjectDesc />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/:slug" element={<BlogDesc />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );
